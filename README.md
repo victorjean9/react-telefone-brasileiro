@@ -94,6 +94,6 @@ Para isso adicione o parâmetro `separaDDD`:
     />
 ```
 
-OBS: repare que o parâmetro `temDDD` é obrigatório para esse parâmetro.
+> OBS: repare que o parâmetro `temDDD` é obrigatório para esse parâmetro.
 
 - Você também pode utilizar os dois parâmetros ao mesmo tempo, com isso as máscaras seguem o seguinte formato: (xx) x xxxx-xxxx.
