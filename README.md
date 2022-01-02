@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Máscara simples para input de número de telefone brasileiro com 8 ou 9 dígitos e DDD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Essa biblioteca para React cria um `<input/>` com a máscara ideal para o formato brasileiro dos números de telefone enquanto você digita.
+Por padrão é identificado tanto números telefônicos de 8 dígitos, quanto números de 9 dígitos.
+Além disso também é possível reconhecer números com DDD.
 
-## Available Scripts
+## Instalação
 
-In the project directory, you can run:
+```shell
+$ npm install victorjean9/react-telefone-brasileiro
+```
 
-### `npm start`
+## Exemplos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Exemplo básico
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O exemplo abaixo cria um `<input/>` para reconhecer números telefônicos de 8 ou 9 dígitos sem o DDD.
+De acordo com as seguintes máscaras: xxxx-xxxx ou xxxxx-xxxx.
 
-### `npm test`
+```JSX
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import TelefoneBrasileiroInput from "victorjean9/react-telefone-brasileiro";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const App = () => {
 
-### `npm run build`
+  const [telefone, setTelefone] = useState("");
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  return (
+    <div>
+      <TelefoneBrasileiroInput
+            value={telefone}
+            onChange={(event) => setTelefone(ev.target.value);}
+      />
+    </div>
+  );
+};
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ReactDOM.render(<App />, document.getElementById("root"));
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Exemplo com DDD
 
-### `npm run eject`
+O exemplo abaixo cria um `<input/>` para reconhecer números telefônicos de 8 ou 9 dígitos com o DDD.
+De acordo com as seguintes máscaras: (xx)xxxx-xxxx ou (xx)xxxxx-xxxx.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```JSX
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import TelefoneBrasileiroInput from "victorjean9/react-telefone-brasileiro";
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+const App = () => {
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  const [telefone, setTelefone] = useState("");
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  return (
+    <div>
+      <TelefoneBrasileiroInput
+            value={telefone}
+            onChange={(event) => setTelefone(ev.target.value);}
+      />
+    </div>
+  );
+};
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ReactDOM.render(<App />, document.getElementById("root"));
+```
