@@ -7,7 +7,28 @@
   "module": "dist/index.js",
   "files": ["dist", "README.md"],
   "license": "MIT",
-
+  "keywords": [
+    "número",
+    "telefone",
+    "brasileiro",
+    "máscara",
+    "mask",
+    "input",
+    "DDD",
+    "input",
+    "react",
+    "brasil",
+    "brazil",
+    "br",
+    "mascara",
+    "8 dígitos",
+    "9 dígitos",
+    "celular"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victorjean9/react-telefone-brasileiro.git"
+  },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
