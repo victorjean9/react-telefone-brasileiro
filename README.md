@@ -10,6 +10,13 @@ Além disso também é possível reconhecer números com DDD.
 $ npm install victorjean9/react-telefone-brasileiro
 ```
 
+## Importação
+
+Coloque o seguinte import no seu componente:
+```JSX
+import TelefoneBrasileiroInput from "victorjean9/react-telefone-brasileiro";
+```
+
 ## Exemplos
 
 ### Exemplo básico
@@ -72,28 +79,50 @@ ReactDOM.render(<App />, document.getElementById("root"));
 Foi criado também outras máscaras:
 - Uma para o formato do nono dígito separado: x xxxx-xxxx ou (xx)x xxxx-xxxx.
 
-Para isso adicione o parâmetro `separaNono`:
+    Para isso adicione o parâmetro `separaNono`:
 
-```JSX
+    ```JSX
     <TelefoneBrasileiroInput
         value={telefone}
         onChange={(event) => setTelefone(ev.target.value);}
         separaNono
     />
-```
+    ```
 
 - E outra para o formato do DDD separado: (xx) xxxx-xxxx ou (xx) xxxxx-xxxx.
-Para isso adicione o parâmetro `separaDDD`:
-
-```JSX
+    Para isso adicione o parâmetro `separaDDD`:
+    > OBS: repare que o parâmetro `temDDD` é obrigatório para esse parâmetro.
+    ```JSX
     <TelefoneBrasileiroInput
         value={telefone}
         onChange={(event) => setTelefone(ev.target.value);}
         temDDD
         separaDDD
     />
-```
-
-> OBS: repare que o parâmetro `temDDD` é obrigatório para esse parâmetro.
+    ```
 
 - Você também pode utilizar os dois parâmetros ao mesmo tempo, com isso as máscaras seguem o seguinte formato: (xx) x xxxx-xxxx.
+    ```JSX
+    <TelefoneBrasileiroInput
+        value={telefone}
+        onChange={(event) => setTelefone(ev.target.value);}
+        separaNono
+        temDDD
+        separaDDD
+    />
+    ```
+
+## Parâmetros
+|            Nome             |          Tipo           | Default | Descrição                                                                                                                                |
+| :-------------------------: | :---------------------: | :----------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
+|    **[`value`](#value)**    |        `String`         |     `""`     | Valor a ser digitado.                                                                                       |  |
+| **[`onChange`](#onChange)** | `Function(event)` |  `() => {}`  | `event`: Evento de entrada do parâmetro `onChange`. <br/> `event.target.value` é o valor a ser mascarado. |
+|     **[`temDDD`](#temDDD)**     |        `Boolean`         |    `false`     | Adiciona campo para a escrita do DDD |
+|     **[`separaNono`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o nono dígito dos demais dígitos |
+|     **[`separaDDD`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o DDD dos demais dígitos |
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
