@@ -117,9 +117,9 @@ Foi criado também outras máscaras:
 | :-------------------------: | :---------------------: | :----------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
 |    **[`value`](#value)**    |        `String`         |     `""`     | Valor a ser digitado.                                                                                       |  |
 | **[`onChange`](#onChange)** | `Function(event)` |  `() => {}`  | `event`: Evento de entrada do parâmetro `onChange`. <br/> `event.target.value` é o valor a ser mascarado. |
-|     **[`temDDD`](#temDDD)**     |        `Boolean`         |    `false`     | Adiciona campo para a escrita do DDD |
-|     **[`separaNono`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o nono dígito dos demais dígitos |
-|     **[`separaDDD`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o DDD dos demais dígitos |
+|     **[`temDDD`](#temDDD)**     |        `Boolean`         |    `false`     | Adiciona campo para a escrita do DDD caso `true`. |
+|     **[`separaNono`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o nono dígito dos demais dígitos caso `true` |
+|     **[`separaDDD`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o DDD dos demais dígitos caso `true` |
 
 ## License
 
