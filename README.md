@@ -14,7 +14,7 @@ $ npm i react-telefone-brasileiro
 
 Coloque o seguinte import no seu componente:
 ```JSX
-import TelefoneBrasileiroInput from "victorjean9/react-telefone-brasileiro";
+import TelefoneBrasileiroInput from "react-telefone-brasileiro";
 ```
 
 ## Exemplos
@@ -27,7 +27,7 @@ De acordo com as seguintes máscaras: xxxx-xxxx ou xxxxx-xxxx.
 ```JSX
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import TelefoneBrasileiroInput from "victorjean9/react-telefone-brasileiro";
+import TelefoneBrasileiroInput from "react-telefone-brasileiro";
 
 const App = () => {
 
@@ -54,7 +54,7 @@ De acordo com as seguintes máscaras: (xx)xxxx-xxxx ou (xx)xxxxx-xxxx.
 ```JSX
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import TelefoneBrasileiroInput from "victorjean9/react-telefone-brasileiro";
+import TelefoneBrasileiroInput from "react-telefone-brasileiro";
 
 const App = () => {
 
