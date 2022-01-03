@@ -1,11 +1,14 @@
 {
   "name": "react-telefone-brasileiro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Máscara simples para input de número de telefone brasileiro com 8 ou 9 dígitos e DDD",
   "author": "Victor Jean",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "license": "MIT",
   "keywords": [
     "número",
@@ -39,7 +42,6 @@
     "start": "webpack serve --progress --hot --port 8080",
     "build": "cross-env NODE_ENV=production babel src --out-dir dist"
   },
-
   "devDependencies": {
     "@babel/cli": "^7.16.7",
     "@babel/core": "^7.16.7",
