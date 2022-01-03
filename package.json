@@ -1,6 +1,6 @@
 {
   "name": "react-telefone-brasileiro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Máscara simples para input de número de telefone brasileiro com 8 ou 9 dígitos e DDD",
   "author": "Victor Jean",
   "main": "dist/index.js",
