@@ -121,6 +121,8 @@ Foi criado também outras máscaras:
 |     **[`separaNono`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o nono dígito dos demais dígitos caso `true` |
 |     **[`separaDDD`](#separaNono)**     |        `Boolean`         |    `false`     | Separa o DDD dos demais dígitos caso `true` |
 
+> Você também pode adicionar os parâmetros padrões da tag `<input/>` como `type`, `required`, dentre outros. Bem como do próprio React, como `className`, `ref`, etc. <br/>Qualquer parâmetro extra adicionado, será incluído na tag `<input/>` a ser gerada.
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
