@@ -7,7 +7,7 @@ Além disso também é possível reconhecer números com DDD.
 ## Instalação
 
 ```shell
-$ npm install victorjean9/react-telefone-brasileiro
+$ npm i react-telefone-brasileiro
 ```
 
 ## Importação
