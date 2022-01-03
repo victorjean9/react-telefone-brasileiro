@@ -23,7 +23,8 @@
     "mascara",
     "8 dígitos",
     "9 dígitos",
-    "celular"
+    "celular",
+    "mobile"
   ],
   "repository": {
     "type": "git",
